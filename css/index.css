@@ -859,6 +859,52 @@ h3 {
     box-shadow: 0 14px 30px rgba(0, 16, 32, 0.05);
 }
 
+.legal-toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 26px;
+}
+
+.legal-toc a {
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: var(--paper);
+    border: 1px solid rgba(6, 23, 37, 0.1);
+    color: var(--ink-soft);
+    font-weight: 800;
+}
+
+.legal-toc a:hover,
+.legal-toc a:focus-visible {
+    color: var(--ink);
+    border-color: rgba(0, 192, 240, 0.5);
+    outline: none;
+}
+
+.legal-note {
+    padding: 16px 18px;
+    border-radius: 18px;
+    background: rgba(255, 200, 24, 0.16);
+    border: 1px solid rgba(255, 200, 24, 0.32);
+}
+
+.legal-block h3 {
+    margin: 32px 0 10px;
+    color: var(--ink);
+    font-size: 1.12rem;
+}
+
+.legal-block ul {
+    margin: 12px 0 0;
+    padding-left: 22px;
+}
+
+.legal-block a {
+    color: var(--cyan-deep);
+    font-weight: 800;
+}
+
 .legal-block {
     padding: 30px;
     margin-top: 24px;
