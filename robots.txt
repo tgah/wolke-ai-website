@@ -1,4 +1,7 @@
+User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: *
 Allow: /
 
-Sitemap: https://wolke.ai/sitemap.xml
+Sitemap: https://wolke-ai.de/sitemap.xml

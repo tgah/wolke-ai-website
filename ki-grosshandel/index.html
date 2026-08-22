@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KI im Großhandel: konkrete Anwendungen im Tagesgeschäft | Wolke</title>
+    <meta name="description" content="Was KI im Großhandel heute konkret leisten kann: Auftragserfassung, Disposition, Retouren, MHD-Management und Kundenhinweise — aus bestehender Warenwirtschaft, ohne WaWi-Wechsel." />
+    <link rel="canonical" href="https://wolke-ai.de/ki-grosshandel/" />
+    <link rel="alternate" hreflang="de" href="https://wolke-ai.de/ki-grosshandel/" />
+    <link rel="alternate" hreflang="x-default" href="https://wolke-ai.de/ki-grosshandel/" />
+    <link rel="icon" href="../assets/logo/favicon.png" type="image/png" />
+    <link rel="manifest" href="../site.webmanifest" />
+    <meta property="og:title" content="KI im Großhandel: konkrete Anwendungen im Tagesgeschäft | Wolke" />
+    <meta property="og:description" content="Was KI im Großhandel heute konkret leisten kann: Auftragserfassung, Disposition, Retouren, MHD-Management und Kundenhinweise — aus bestehender Warenwirtschaft, ohne WaWi-Wechsel." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://wolke-ai.de/ki-grosshandel/" />
+    <meta property="og:image" content="https://wolke-ai.de/assets/og/wolke-ai-og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#fff7e8" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://wolke-ai.de/ki-grosshandel/",
+      "url": "https://wolke-ai.de/ki-grosshandel/",
+      "name": "KI im Großhandel: konkrete Anwendungen im Tagesgeschäft",
+      "description": "Was KI im Großhandel heute konkret leisten kann: Auftragserfassung, Disposition, Retouren, MHD-Management und Kundenhinweise — aus bestehender Warenwirtschaft, ohne WaWi-Wechsel.",
+      "inLanguage": "de-DE",
+      "isPartOf": { "@id": "https://wolke-ai.de/#website" },
+      "publisher": { "@id": "https://wolke-ai.de/#organization" },
+      "dateModified": "2026-08-22"
+    }
+    </script>
+    <link rel="stylesheet" href="../css/index.css" />
+    <noscript><style>.reveal{opacity:1;transform:none}.reveal:not(.is-visible) *{animation-play-state:running}</style></noscript>
+    <style>
+        /* ── Guide page layout ─────────────────────────────────────── */
+        .guide-hero { padding: var(--sp-xl) 0 var(--sp-lg); background: var(--sand); }
+        .guide-hero h1 { max-width: 38rem; }
+        .guide-hero .lede { max-width: 36rem; }
+
+        .guide-body { padding: var(--sp-xl) 0; }
+        .guide-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 22rem;
+            gap: var(--sp-xl);
+            align-items: start;
+        }
+        @media (max-width: 900px) {
+            .guide-grid { grid-template-columns: 1fr; }
+            .guide-toc { display: none; }
+        }
+
+        /* Article copy */
+        .guide-article { max-width: 42rem; }
+        .guide-article h2 {
+            font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+            margin: var(--sp-xl) 0 var(--sp-xs);
+            padding-top: var(--sp-lg);
+            border-top: 1px solid var(--rule);
+        }
+        .guide-article h2:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+        .guide-article p { margin: 0 0 var(--sp-sm); line-height: 1.65; }
+        .guide-article ul, .guide-article ol {
+            margin: 0 0 var(--sp-sm);
+            padding-left: 1.4rem;
+        }
+        .guide-article li { margin-bottom: 0.35rem; line-height: 1.6; }
+        .guide-article a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+        .guide-article a:hover { text-decoration: none; }
+
+        /* Answer box — direct answer highlight */
+        .answer-box {
+            background: #fff;
+            border-left: 3px solid var(--accent);
+            padding: var(--sp-sm) var(--sp-md);
+            border-radius: 0 var(--r) var(--r) 0;
+            margin: 0 0 var(--sp-sm);
+        }
+        .answer-box p { margin: 0; font-weight: 500; }
+
+        /* Inline mini-demo shell (static, no JS dependency) */
+        .mini-shell {
+            background: var(--shell-bg, #1a1a2e);
+            border-radius: var(--r);
+            overflow: hidden;
+            margin: var(--sp-sm) 0 var(--sp-md);
+            font-size: 0.82rem;
+        }
+        .mini-shell .shell-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.55rem 0.9rem;
+            background: rgba(255,255,255,0.06);
+            font-size: 0.78rem;
+            color: rgba(255,255,255,0.55);
+        }
+        .mini-shell .shell-bar strong { color: rgba(255,255,255,0.85); font-weight: 600; }
+        .mini-shell .shell-body { padding: 0.75rem 0.9rem; color: rgba(255,255,255,0.82); }
+        .mini-shell table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+        .mini-shell th {
+            text-align: left;
+            padding: 0.3rem 0.5rem;
+            color: rgba(255,255,255,0.45);
+            font-weight: 500;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .mini-shell td { padding: 0.35rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .mini-shell .row-warn td:first-child { color: #f5c842; }
+        .mini-shell .row-ok td:first-child { color: #6ee7b7; }
+        .mini-shell .row-info td:first-child { color: #93c5fd; }
+        .mini-shell .note { margin-top: 0.6rem; color: rgba(255,255,255,0.45); font-size: 0.75rem; padding: 0 0.5rem 0.4rem; }
+
+        /* Pattern strip (inline version) */
+        .inline-pattern {
+            display: flex;
+            gap: var(--sp-xs);
+            flex-wrap: wrap;
+            margin: var(--sp-sm) 0 var(--sp-md);
+        }
+        .inline-pattern li {
+            list-style: none;
+            background: var(--sand);
+            border-radius: var(--r);
+            padding: 0.45rem 0.75rem;
+            font-size: 0.82rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .inline-pattern li span {
+            background: var(--accent);
+            color: #fff;
+            border-radius: 50%;
+            width: 1.25rem;
+            height: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        /* Fit table */
+        .fit-table { width: 100%; border-collapse: collapse; margin: var(--sp-sm) 0 var(--sp-md); font-size: 0.88rem; }
+        .fit-table th {
+            text-align: left;
+            padding: 0.5rem 0.75rem;
+            background: var(--sand);
+            font-weight: 600;
+            border-bottom: 2px solid var(--rule);
+        }
+        .fit-table td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+        .fit-table td:first-child { font-weight: 500; }
+        .fit-check { color: #16a34a; font-weight: 700; }
+        .fit-cross { color: #9ca3af; }
+
+        /* Sticky ToC sidebar */
+        .guide-toc {
+            position: sticky;
+            top: 5.5rem;
+            background: var(--sand);
+            border-radius: var(--r);
+            padding: var(--sp-md);
+            font-size: 0.83rem;
+        }
+        .guide-toc-title { font-weight: 700; margin-bottom: var(--sp-xs); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+        .guide-toc ol { padding-left: 1.2rem; margin: 0; }
+        .guide-toc li { margin-bottom: 0.4rem; line-height: 1.4; }
+        .guide-toc a { color: var(--fg); text-decoration: none; }
+        .guide-toc a:hover { color: var(--accent); }
+        .guide-toc .toc-cta {
+            margin-top: var(--sp-sm);
+            padding-top: var(--sp-sm);
+            border-top: 1px solid var(--rule);
+        }
+        .guide-toc .btn { width: 100%; text-align: center; font-size: 0.82rem; }
+
+        /* intro chips row */
+        .intro-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: var(--sp-xs) 0 var(--sp-sm); }
+        .intro-chip {
+            background: #fff;
+            border: 1px solid var(--rule);
+            border-radius: 99px;
+            padding: 0.25rem 0.65rem;
+            font-size: 0.78rem;
+            color: var(--muted-fg, #555);
+        }
+
+        /* section link chip */
+        .ref-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            background: var(--sand);
+            border-radius: var(--r);
+            padding: 0.3rem 0.65rem;
+            font-size: 0.8rem;
+            color: var(--accent);
+            text-decoration: none;
+            margin-top: 0.4rem;
+        }
+        .ref-link:hover { text-decoration: underline; }
+        .ref-link::before { content: "→"; }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+    <header class="site-header">
+        <div class="nav-wrap">
+            <a class="brand" href="../index.html" aria-label="Wolke AI Startseite">
+                <span class="brand-mark" aria-hidden="true"><span class="brand-w">w</span></span>
+                <span>Wolke AI</span>
+            </a>
+            <nav class="nav-links" data-nav-links aria-label="Hauptnavigation">
+                <a href="../index.html#anbindung">Anbindung</a>
+                <a href="../index.html#ablauf">Abläufe</a>
+                <a href="../index.html#hinweise">Hinweise</a>
+                <a href="../product.html">Produkt</a>
+                <a href="../legal.html">Rechtliches</a>
+            </nav>
+            <div class="nav-actions">
+                <div class="lang-switch" aria-label="Sprache wählen">
+                    <a class="is-active" href="./index.html" lang="de" aria-current="true">DE</a>
+                    <a href="../en/index.html" lang="en">EN</a>
+                </div>
+                <a class="btn btn-primary" href="../index.html#kontakt">Gespräch vereinbaren</a>
+                <button class="menu-toggle" type="button" aria-label="Navigation öffnen" aria-expanded="false" data-menu-toggle>
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- HERO -->
+        <section class="guide-hero">
+            <div class="container reveal">
+                <p class="eyebrow">Praxisleitfaden</p>
+                <h1>KI im Großhandel: konkrete Anwendungen im Tagesgeschäft</h1>
+                <p class="lede">Was KI für Großhändler heute leisten kann — nicht als Vision, sondern als Ablauf. Auf Basis der Daten und Warenwirtschaft, die in Ihrem Betrieb bereits vorhanden sind.</p>
+                <div class="intro-chips" aria-label="Themen auf dieser Seite">
+                    <span class="intro-chip">Auftragserfassung</span>
+                    <span class="intro-chip">Disposition &amp; Tourenplanung</span>
+                    <span class="intro-chip">Retoure &amp; Faktura</span>
+                    <span class="intro-chip">Kundenhinweise</span>
+                    <span class="intro-chip">MHD &amp; Bestand</span>
+                    <span class="intro-chip">WaWi-Kompatibilität</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- GUIDE BODY -->
+        <section class="guide-body">
+            <div class="container">
+                <div class="guide-grid">
+
+                    <!-- ── ARTICLE ───────────────────────────────── -->
+                    <article class="guide-article" id="guide-article">
+
+                        <!-- 1 -->
+                        <h2 id="was-bringt-ki">Was bringt KI im Großhandel konkret?</h2>
+                        <div class="answer-box">
+                            <p>KI macht sichtbar, was in Ihren Warenwirtschaftsdaten bereits steckt — und schlägt konkrete nächste Schritte vor. Entscheiden tut Ihr Team.</p>
+                        </div>
+                        <p>Bestellungen, Lieferungen, Retouren, Lagerbestände und Kundenumsätze entstehen bei Ihnen jeden Tag. Die Informationen liegen in Ihrer Warenwirtschaft, in E-Mails und in Notizen des Dispositionsteams — aber sie sind selten an einem Ort zusammengefasst und selten so aufbereitet, dass der richtige Mitarbeiter zur richtigen Zeit handeln kann.</p>
+                        <p>Sinnvoller KI-Einsatz im Großhandel beginnt genau dort: an den Abläufen und Daten, die schon vorhanden sind. Kein neues System wird eingeführt, bevor der erste konkrete Nutzen klar ist.</p>
+                        <p>Die typischen Anwendungsfelder im Tagesgeschäft sind Auftragserfassung, Disposition und Tourenplanung, Retouren- und Rechnungsabgleich, Kundenwarnsignale und MHD-Überwachung. Die folgenden Abschnitte erklären jeden dieser Bereiche an einem konkreten Ablauf.</p>
+
+                        <!-- 2 -->
+                        <h2 id="warenwirtschaft">Muss die Warenwirtschaft dafür ersetzt werden?</h2>
+                        <div class="answer-box">
+                            <p>Nein. Wolke setzt auf der bestehenden Warenwirtschaft auf — sie bleibt Ihre Datenquelle und führendes System.</p>
+                        </div>
+                        <p>Die häufigste Sorge beim Thema KI im Großhandel: "Müssen wir dafür unsere WaWi wechseln?" Die Antwort ist nein — zumindest nicht als Voraussetzung.</p>
+                        <p>Wolke verbindet sich über freigegebene Schnittstellen, lesende Sichten oder abgestimmte Datenexporte mit dem, was Ihre Warenwirtschaft heute schon hergibt. Welche Daten fließen und in welchem Format, wird vor dem Start schriftlich festgehalten. Änderungen an Ihrem bestehenden System sind nicht erforderlich.</p>
+                        <p>Heute unterstützt Wolke unter anderem Betriebe, die mit Brückner WinAB, GDI Business-Line, Xentral oder Qlik Sense arbeiten — sowie viele weitere Systeme über Standardexporte und APIs.</p>
+                        <a class="ref-link" href="../index.html#anbindung">Anbindungsübersicht auf der Startseite ansehen</a>
+
+                        <!-- 3 -->
+                        <h2 id="auftragserfassung">Bestellungen erfassen, ohne jeden Auftrag abzutippen</h2>
+                        <div class="answer-box">
+                            <p>Kunden bestellen weiter per WhatsApp, E-Mail oder Telefon. Wolke liest die Angaben aus und macht daraus eine prüfbare Bestellung — mit Artikel, Menge und Lieferfenster.</p>
+                        </div>
+                        <p>In vielen Großhandelsbetrieben kommt die Hälfte der Bestellungen nicht über ein Bestellportal, sondern als WhatsApp-Nachricht, E-Mail oder Anruf herein. Das bedeutet: jemand im Innendienst tippt die Angaben manuell in die Warenwirtschaft ab — mit dem Risiko, einen Artikel falsch zu lesen, eine Menge zu verwechseln oder ein Lieferdatum zu verpassen.</p>
+                        <p>Wolke liest eingehende Bestellungen aus diesen Kanälen aus, ordnet Artikel und Mengen dem Kundenstamm zu und legt einen Bestellentwurf an. Ihr Büro prüft den Entwurf und gibt ihn frei — erst dann geht die Bestellung in die Warenwirtschaft über.</p>
+
+                        <div class="mini-shell" role="img" aria-label="Demo: Drei Bestelleingänge (WhatsApp, E-Mail, Telefon) werden zu geprüften Bestellentwürfen">
+                            <div class="shell-bar">
+                                <strong>Bestelleingang</strong>
+                                <span>3 offen · Donnerstag 09:04</span>
+                            </div>
+                            <div class="shell-body">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Eingang</th>
+                                            <th>Kunde</th>
+                                            <th>Artikel erkannt</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="row-warn">
+                                            <td>WhatsApp</td>
+                                            <td>Restaurant Milano</td>
+                                            <td>3 Positionen</td>
+                                            <td>Freigabe ausstehend</td>
+                                        </tr>
+                                        <tr class="row-warn">
+                                            <td>E-Mail</td>
+                                            <td>Asia Bistro GmbH</td>
+                                            <td>4 Positionen</td>
+                                            <td>Freigabe ausstehend</td>
+                                        </tr>
+                                        <tr class="row-ok">
+                                            <td>Telefon</td>
+                                            <td>Trattoria Roma</td>
+                                            <td>3 Positionen</td>
+                                            <td>Freigegeben · in WaWi</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="note">Freigabe bleibt beim Büro. Erst nach Bestätigung wird die Bestellung an die Warenwirtschaft übergeben.</p>
+                            </div>
+                        </div>
+
+                        <p>Das Ergebnis: weniger Abtippen, weniger Fehler, und ein vollständiges Protokoll, welche Bestellung aus welchem Kanal kam. Der Kunde bemerkt keinen Unterschied — er bestellt weiter so wie bisher.</p>
+                        <a class="ref-link" href="../index.html#ablauf">Bestelleingang-Demo auf der Startseite ansehen</a>
+
+                        <!-- 4 -->
+                        <h2 id="disposition">KI in Disposition und Tourenplanung</h2>
+                        <div class="answer-box">
+                            <p>Wolke rechnet Tourvarianten durch und zeigt, was der Unterschied im Alltag bedeutet. Gefahren wird, was Ihr Disponent wählt.</p>
+                        </div>
+                        <p>Tourenplanung im Lebensmittelgroßhandel ist kein reines Optimierungsproblem. Es gibt Lieferfenster, Prioritätskunden, Frühlieferungen für den Gastronomiebereich und tagesaktuelle Änderungen durch neue Bestellungen oder Retourenanmeldungen.</p>
+                        <p>KI kann mehrere Tourvarianten gleichzeitig durchrechnen und dabei unterschiedliche Zielkonflikte abbilden: kürzeste Gesamtstrecke gegen einen dringenden Kunden zuerst, Kraftstoffverbrauch gegen pünktliche Lieferung. Das Ergebnis sind zwei konkrete Vorschläge mit einer kurzen Erläuterung, was der Unterschied für den Fahrer und für das Lieferfenster bedeutet.</p>
+                        <p>Versprochen wird keine "optimale Route" — dafür gibt es im realen Betrieb zu viele Faktoren, die kein System vollständig kennt. Was Wolke liefert, ist eine schnelle, gut begründete Entscheidungsgrundlage für den Disponenten.</p>
+
+                        <div class="mini-shell" role="img" aria-label="Demo: Zwei Tourvarianten für Tour 12 mit Vor- und Nachteilen">
+                            <div class="shell-bar">
+                                <strong>Tour 12 · Donnerstag</strong>
+                                <span>Fahrer M. Kaya · 4 Stopps</span>
+                            </div>
+                            <div class="shell-body">
+                                <table>
+                                    <thead>
+                                        <tr><th>Variante</th><th>Strecke</th><th>Lieferfenster</th><th>Besonderheit</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="row-ok">
+                                            <td>Effiziente Tour</td>
+                                            <td>12,5 km</td>
+                                            <td>Alle eingehalten</td>
+                                            <td>Gesamtstrecke 25 Min. kürzer</td>
+                                        </tr>
+                                        <tr class="row-info">
+                                            <td>Priorität zuerst</td>
+                                            <td>15,2 km</td>
+                                            <td>Nordmarkt in 18 Min.</td>
+                                            <td>Längere Gesamtstrecke · 1,8 L</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="note">Nordmarkt hat ein hartes Lieferfenster vor 10:00. Disponent entscheidet, welche Variante gefahren wird.</p>
+                            </div>
+                        </div>
+
+                        <a class="ref-link" href="../index.html#tour">Tourdisposition-Demo auf der Startseite ansehen</a>
+
+                        <!-- 5 -->
+                        <h2 id="retouren-faktura">Retouren, Lieferscheine und Faktura sauber verbinden</h2>
+                        <div class="answer-box">
+                            <p>Wenn der Fahrer eine defekte Kiste zurückbringt, hängt Wolke die Meldung am Auftrag an und zeigt die korrigierte Rechnung — bevor sie versendet wird.</p>
+                        </div>
+                        <p>Retouren im Lebensmittelgroßhandel entstehen oft direkt beim Stopp: eine beschädigte Lieferung, ein falsch bestellter Artikel, eine übrig gebliebene Kiste. In vielen Betrieben läuft das als WhatsApp-Nachricht in eine Gruppe — und jemand im Büro muss die Rechnung später manuell korrigieren, falls er die Meldung überhaupt noch findet.</p>
+                        <p>Wolke verbindet die Fahrermeldung direkt mit dem Auftrag. Die betroffenen Positionen auf der Rechnung werden markiert und mit dem korrigierten Betrag angezeigt. Ihr Büro sieht die Abweichung, bestätigt die Anpassung — und erst dann wird die Faktura angepasst. Kein manuelles Suchen, kein übersehener Rückstand.</p>
+                        <a class="ref-link" href="../index.html#rechnung">Retoure-und-Faktura-Demo auf der Startseite ansehen</a>
+
+                        <!-- 6 -->
+                        <h2 id="kundenhinweise">Kunden erkennen, die plötzlich weniger bestellen</h2>
+                        <div class="answer-box">
+                            <p>Wenn ein Stammkunde 34 % weniger bestellt als im Vormonat, meldet Wolke es — mit dem Bestellverlauf dahinter und einem konkreten Vorschlag, was jetzt sinnvoll wäre.</p>
+                        </div>
+                        <p>Kundenabwanderung im B2B-Großhandel passiert selten von heute auf morgen. Meistens sinkt das Bestellvolumen über mehrere Wochen, bevor jemand im Vertrieb den Kunden anspricht. Bis dahin ist oft ein Wettbewerber bereits im Gespräch.</p>
+                        <p>Wolke wertet Bestellhistorie und Bestellverhalten aus und meldet sich, wenn ein Kunde deutlich vom eigenen Durchschnitt abweicht. Die Meldung enthält den konkreten Rückgang, welche Produktgruppen betroffen sind, und einen Vorschlag, was jetzt zu tun wäre — zum Beispiel einen Anruf mit einem Angebot für die betroffene Warengruppe.</p>
+                        <p>Das Muster, das Wolke dabei folgt:</p>
+
+                        <ul class="inline-pattern" role="list" aria-label="Wolke-Muster: Erkannt, Warum, Aktion, Wirkung">
+                            <li><span>1</span>Erkannt — Was hat sich verändert?</li>
+                            <li><span>2</span>Warum — Welche Daten stecken dahinter?</li>
+                            <li><span>3</span>Aktion — Was wäre jetzt sinnvoll?</li>
+                            <li><span>4</span>Wirkung — Hat es etwas gebracht?</li>
+                        </ul>
+
+                        <p>Den Kunden anrufen tut Ihr Vertrieb. Wolke legt die Aufgabe an und prüft nach, ob die nächste Bestellung kommt.</p>
+                        <a class="ref-link" href="../index.html#hinweise">Kundenhinweis-Demo auf der Startseite ansehen</a>
+
+                        <!-- 7 -->
+                        <h2 id="mhd-bestand">MHD und Bestand früher erkennen</h2>
+                        <div class="answer-box">
+                            <p>Wolke rechnet Bestand, Abverkauf und Restlaufzeit gegeneinander — und nennt die Kunden, die den Artikel ohnehin regelmäßig kaufen.</p>
+                        </div>
+                        <p>Im Lebensmittelgroßhandel ist das MHD keine Randbedingung, sondern ein tägliches Risiko. Bei 84 Kartons Mozzarella mit 22 Tagen Restlaufzeit und einem Abverkauf von durchschnittlich 11 Kartons pro Woche bleiben rechnerisch etwa 49 Kartons übrig, wenn sich nichts ändert. Das ist eine Abschreibung, die früh erkennbar wäre.</p>
+                        <p>Wolke verbindet Bestandsdaten, Verkaufsgeschwindigkeit und MHD aus der Warenwirtschaft und zeigt, welche Artikel unter Druck stehen — und welche Kunden den Artikel in der Vergangenheit regelmäßig gekauft haben. Das ersetzt keinen Vertriebsanruf, aber es macht den richtigen Anruf zur richtigen Zeit wahrscheinlicher.</p>
+
+                        <div class="mini-shell" role="img" aria-label="Demo: MHD-Druckübersicht für Artikel 44120 Mozzarella 1 kg">
+                            <div class="shell-bar">
+                                <strong>Artikel 44120 · Mozzarella 1 kg</strong>
+                                <span class="chip chip--warn">MHD-Druck</span>
+                            </div>
+                            <div class="shell-body">
+                                <table>
+                                    <thead>
+                                        <tr><th>Kennzahl</th><th>Wert</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="row-info"><td>Bestand</td><td>84 Kartons</td></tr>
+                                        <tr class="row-info"><td>Abverkauf</td><td>Ø 11 / Woche</td></tr>
+                                        <tr class="row-info"><td>Restlaufzeit</td><td>22 Tage</td></tr>
+                                        <tr class="row-warn"><td>Rechnerisch offen</td><td>≈ 49 Kartons</td></tr>
+                                    </tbody>
+                                </table>
+                                <p class="note">8 Kunden kaufen diesen Artikel regelmäßig — Vorschlag: Verkauf prüfen, Aufgabe anlegen.</p>
+                            </div>
+                        </div>
+
+                        <a class="ref-link" href="../index.html#mhd">MHD-und-Bestand-Demo auf der Startseite ansehen</a>
+
+                        <!-- 8 -->
+                        <h2 id="kontrolle">Wie bleibt der Mensch bei KI im Großhandel in Kontrolle?</h2>
+                        <div class="answer-box">
+                            <p>Wolke zeigt, was erkannt wurde und warum. Gehandelt wird nach Ihrer Entscheidung. Danach prüft Wolke, ob die Maßnahme gewirkt hat.</p>
+                        </div>
+                        <p>Ein häufiges Bedenken beim Thema KI im Betrieb: "Trifft die KI dann selbständig Entscheidungen?" Nicht bei Wolke.</p>
+                        <p>Das Prinzip ist durchgängig: Wolke erkennt ein Signal und erklärt es mit den Daten dahinter. Dann schlägt es eine sinnvolle Maßnahme vor. Die Entscheidung liegt beim Menschen — ob eine Bestellung freigegeben wird, ob eine Rechnung angepasst wird, ob der Vertrieb einen Kunden anruft. Wolke führt keine Aktion selbständig aus.</p>
+                        <p>Nach einer Maßnahme prüft Wolke, ob das Signal sich verändert hat: Hat der Kunde wieder bestellt? Wurde der MHD-Artikel abverkauft? Dieses Nachkontrollieren läuft automatisch und meldet sich erneut, wenn nötig.</p>
+                        <p>Für technische Fragen zur Datenanbindung, Zugriffsrollen und Hosting gilt: Wolke wird über freigegebene Schnittstellen oder Exporte angebunden, das Hosting findet in Deutschland statt, und Auftragsverarbeitung sowie Datenschutzdokumentation werden gemeinsam vor dem Start geklärt.</p>
+
+                        <!-- 9 -->
+                        <h2 id="fuer-wen">Für welche Großhändler ist das sinnvoll?</h2>
+                        <div class="answer-box">
+                            <p>Am meisten bringt Wolke dort, wo Bestellungen manuell erfasst werden, Dispositionen täglich anfallen und die Warenwirtschaft bereits Daten enthält — aber kaum jemand sie systematisch auswertet.</p>
+                        </div>
+                        <p>Sinnvoll ist der Einsatz vor allem für:</p>
+
+                        <table class="fit-table">
+                            <thead>
+                                <tr>
+                                    <th>Betriebsart</th>
+                                    <th>Warum Wolke passt</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Lebensmittelgroßhandel</td>
+                                    <td>MHD, Chargen und Bestellverhalten sind täglich relevant; manuelle Aufwände beim Bestelleingang und der Faktura sind typisch</td>
+                                </tr>
+                                <tr>
+                                    <td>Importeure und Distributoren</td>
+                                    <td>Mehrere Kunden, variierende Bestellrhythmen, Lieferfenster und Rechnungsabgleich</td>
+                                </tr>
+                                <tr>
+                                    <td>Betriebe mit Eigenlieferung</td>
+                                    <td>Tägliche Tourenplanung mit mehreren Stopps und Fahrerkommunikation über Mobilgeräte</td>
+                                </tr>
+                                <tr>
+                                    <td>Betriebe mit WaWi/ERP-Daten</td>
+                                    <td>Vorhandene Warenwirtschaft enthält Bestands-, Bestell- und Kundendaten — Wolke macht sie auswertbar</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p>Weniger sinnvoll ist Wolke derzeit für Betriebe ohne eigene operative Stammdaten, für reine B2C-Händler ohne Lieferlogistik, oder wenn die Warenwirtschaft weder Exporte noch Schnittstellen anbietet.</p>
+
+                        <!-- 10 -->
+                        <h2 id="wie-starten">Wie startet man sinnvoll?</h2>
+                        <div class="answer-box">
+                            <p>Klein anfangen, an einem Ablauf. Erst wenn das funktioniert, kommt der nächste.</p>
+                        </div>
+                        <p>Eine KI-Einführung im Großhandelsbetrieb muss nicht groß starten. Wolke folgt drei Schritten:</p>
+
+                        <ol>
+                            <li><strong>Betrieb verstehen.</strong> In einem kurzen Gespräch schauen wir gemeinsam auf Ihre Abläufe: Wie kommen Bestellungen rein? Wie läuft die Disposition heute? Was passiert bei einer Retoure? Daraus ergibt sich, wo ein erster Anwendungsfall den größten Nutzen bringt.</li>
+                            <li><strong>Klein starten.</strong> Wir beginnen mit einem einzigen Ablauf — zum Beispiel dem Bestelleingang oder der MHD-Überwachung. Das hält das Projekt überschaubar und zeigt ein messbares Ergebnis, bevor mehr investiert wird.</li>
+                            <li><strong>Gemeinsam einführen.</strong> Wolke wird eingerichtet, getestet und das Team eingearbeitet. Wir bleiben dabei, bis der Ablauf läuft und Fragen geklärt sind.</li>
+                        </ol>
+
+                        <p>Wenn Sie wissen möchten, wie das für Ihren Betrieb konkret aussehen würde — sprechen Sie uns an.</p>
+
+                        <div class="actions" style="margin-top: var(--sp-md);">
+                            <a class="btn btn-cyan" href="../index.html#kontakt">Gespräch vereinbaren</a>
+                            <a class="btn btn-ghost" href="../index.html#anbindung">Anbindung ansehen</a>
+                        </div>
+
+                    </article>
+
+                    <!-- ── TABLE OF CONTENTS ─────────────────────── -->
+                    <aside class="guide-toc" aria-label="Inhaltsverzeichnis">
+                        <div class="guide-toc-title">Auf dieser Seite</div>
+                        <ol>
+                            <li><a href="#was-bringt-ki">Was bringt KI konkret?</a></li>
+                            <li><a href="#warenwirtschaft">Warenwirtschaft ersetzen?</a></li>
+                            <li><a href="#auftragserfassung">Bestellungen erfassen</a></li>
+                            <li><a href="#disposition">Disposition &amp; Tourenplanung</a></li>
+                            <li><a href="#retouren-faktura">Retouren &amp; Faktura</a></li>
+                            <li><a href="#kundenhinweise">Kundenhinweise</a></li>
+                            <li><a href="#mhd-bestand">MHD &amp; Bestand</a></li>
+                            <li><a href="#kontrolle">Mensch in Kontrolle</a></li>
+                            <li><a href="#fuer-wen">Für wen sinnvoll?</a></li>
+                            <li><a href="#wie-starten">Wie starten?</a></li>
+                        </ol>
+                        <div class="toc-cta">
+                            <a class="btn btn-primary btn-sm" href="../index.html#kontakt">Gespräch vereinbaren</a>
+                        </div>
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <a class="brand" href="../index.html" aria-label="Wolke AI Startseite">
+                    <span class="brand-mark" aria-hidden="true"><span class="brand-w">w</span></span>
+                    <span>Wolke AI</span>
+                </a>
+                <p>Wolke bringt KI ins Tagesgeschäft von Großhändlern. Bestehende Warenwirtschafts- und Betriebsdaten werden für Bestellungen, Disposition, Lieferung, Bestand und Vertrieb nutzbar.</p>
+            </div>
+            <div>
+                <div class="footer-title">Weitere Seiten</div>
+                <div class="footer-links">
+                    <a href="../index.html">Startseite</a>
+                    <a href="../index.html#anbindung">Anbindung</a>
+                    <a href="../index.html#ablauf">Abläufe</a>
+                    <a href="../index.html#hinweise">Hinweise</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-title">Kontakt</div>
+                <div class="footer-links">
+                    <a href="mailto:Singh@wolke-ai.de">Singh@wolke-ai.de</a>
+                    <a href="../index.html#kontakt">Gespräch vereinbaren</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-title">Rechtliches</div>
+                <div class="footer-links">
+                    <a href="../legal.html#impressum">Impressum</a>
+                    <a href="../legal.html#privacy">Datenschutz</a>
+                    <a href="../legal.html#terms">Nutzungsbedingungen</a>
+                </div>
+                <p>© 2026 Wolke AI.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../index.js"></script>
+</body>
+</html>

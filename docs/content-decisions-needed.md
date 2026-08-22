@@ -4,13 +4,9 @@ These items need founder input before the frontend developer should finalize the
 
 ## 1. Domain
 
-Confirm exact production domain:
+Canonical production domain: `https://wolke-ai.de/`. Do not use another public domain in canonical, sitemap, Open Graph or hreflang URLs.
 
-- `https://wolke.ai/`?
-- `https://www.wolke.ai/`?
-- another domain?
-
-This is needed for:
+This is used for:
 
 - `sitemap.xml`
 - `robots.txt`

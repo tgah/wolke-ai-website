@@ -13,7 +13,20 @@ This iteration moves away from the earlier dark template and toward a lighter, r
 - operational dashboard mockup without fake customer logos
 - no external runtime CDN dependencies
 - bilingual German/English structure with German as default
-- German copy uses the informal du form
+- German copy uses the formal Sie form; `/en/` is still on the V1 copy
+- German homepage is product-led (V3, August 2026): every capability is shown as a
+  Wolke product screen next to its explanation — integration network, order intake,
+  dispatch/route choice, return + invoice, Layer-2 signal cards, MHD item view.
+  All animation is CSS; the only JavaScript is the menu and the reveal observer.
+- restrained radii (buttons 10px, panels 16px), flat section labels instead of pills,
+  headline scale roughly 30% below V2 so the product UI dominates
+- system tiles carry text wordmarks until real logo files land — see
+  `assets/logos/README.md`; the invoice section can be swapped for a real recording,
+  see `assets/video/README.md`
+- copy alternatives live in `docs/homepage-v2-copy-options.md`
+- `python3 check.py` verifies the acceptance criteria (dead anchors, du-forms, forbidden
+  strings, contact address, nav, required content, radii, undefined keyframes)
+- `pricing.html` is reachable by direct URL but no longer linked from nav or footer
 
 ## Pages
 
@@ -70,7 +83,7 @@ Founder/legal input still needed:
 - VAT ID / registration details if applicable
 - privacy contact
 - hosting/provider details
-- final domain decision: `wolke.ai` or `www.wolke.ai`
+- final domain decision: `wolke-ai.de` or `wolke-ai.de`
 - whether Google Analytics/Hotjar will be added later
 
 The legal page currently contains launch-structure placeholders and must be reviewed before production use.

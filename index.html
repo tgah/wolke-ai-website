@@ -3,22 +3,47 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wolke AI | Schluss mit manuellen Auswertungen im Lagergeschäft</title>
-    <meta name="description" content="Wolke AI verbindet sich mit deinem ERP und gibt Inhabern und Teams eine KI-gestützte Übersicht über Bestände, Chargen, Lieferstatus und Deckungsbeiträge — ohne neues Softwareprojekt." />
-    <link rel="canonical" href="https://wolke.ai/" />
-    <link rel="alternate" hreflang="de" href="https://wolke.ai/" />
-    <link rel="alternate" hreflang="en" href="https://wolke.ai/en/" />
-    <link rel="alternate" hreflang="x-default" href="https://wolke.ai/" />
+    <title>Wolke: KI für Großhändler | Warenwirtschaft &amp; Tagesgeschäft</title>
+    <meta name="description" content="Wolke bringt KI in den Großhandel: Bestellungen, Touren, Lieferscheine, MHD und Kundenhinweise aus bestehenden Warenwirtschaftsdaten — ohne WaWi-Wechsel." />
+    <link rel="canonical" href="https://wolke-ai.de/" />
+    <link rel="alternate" hreflang="de" href="https://wolke-ai.de/" />
+    <link rel="alternate" hreflang="en" href="https://wolke-ai.de/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://wolke-ai.de/" />
     <link rel="icon" href="./assets/logo/favicon.png" type="image/png" />
     <link rel="manifest" href="./site.webmanifest" />
-    <meta property="og:title" content="Wolke AI | Schluss mit manuellen Auswertungen im Lagergeschäft" />
-    <meta property="og:description" content="KI-gestützte Übersicht für Bestände, Chargen, Lieferstatus und Deckungsbeiträge." />
+    <meta property="og:title" content="Wolke: KI für Großhändler" />
+    <meta property="og:description" content="KI im Großhandel, die vorhandene Warenwirtschaft und Tagesgeschäft verbindet: Bestellungen, Touren, MHD, Kundenhinweise und konkrete nächste Schritte." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://wolke.ai/" />
-    <meta property="og:image" content="https://wolke.ai/assets/og/wolke-ai-og-image.png" />
+    <meta property="og:url" content="https://wolke-ai.de/" />
+    <meta property="og:image" content="https://wolke-ai.de/assets/og/wolke-ai-og-image.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#fff7e8" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://wolke-ai.de/#organization",
+          "name": "Wolke AI",
+          "url": "https://wolke-ai.de/",
+          "logo": "https://wolke-ai.de/assets/logo/favicon.png",
+          "email": "Singh@wolke-ai.de"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://wolke-ai.de/#website",
+          "url": "https://wolke-ai.de/",
+          "name": "Wolke AI",
+          "description": "KI für Großhändler, die bestehende Warenwirtschafts- und Betriebsdaten im Tagesgeschäft nutzbar macht.",
+          "publisher": { "@id": "https://wolke-ai.de/#organization" },
+          "inLanguage": "de-DE"
+        }
+      ]
+    }
+    </script>
     <link rel="stylesheet" href="./css/index.css" />
+    <noscript><style>.reveal{opacity:1;transform:none}.reveal:not(.is-visible) *{animation-play-state:running}</style></noscript>
 </head>
 <body>
     <a class="skip-link" href="#main">Zum Inhalt springen</a>
@@ -29,15 +54,15 @@
                 <span>Wolke AI</span>
             </a>
             <nav class="nav-links" data-nav-links aria-label="Hauptnavigation">
+                <a href="./index.html#anbindung">Anbindung</a>
+                <a href="./index.html#ablauf">Abläufe</a>
+                <a href="./index.html#hinweise">Hinweise</a>
                 <a href="./product.html">Produkt</a>
-                <a href="./index.html#services">Leistungen</a>
-                <a href="./index.html#how-it-works">So funktioniert's</a>
-                <a href="./pricing.html">Preise</a>
                 <a href="./legal.html">Rechtliches</a>
             </nav>
             <div class="nav-actions">
                 <div class="lang-switch" aria-label="Sprache wählen"><a class="is-active" href="./index.html" lang="de" aria-current="true">DE</a><a href="./en/index.html" lang="en">EN</a></div>
-                <a class="btn btn-primary" href="./index.html#contact">Assessment anfragen</a>
+                <a class="btn btn-primary" href="#kontakt">Gespräch vereinbaren</a>
                 <button class="menu-toggle" type="button" aria-label="Navigation öffnen" aria-expanded="false" data-menu-toggle>
                     <span></span><span></span><span></span>
                 </button>
@@ -46,25 +71,195 @@
     </header>
 
     <main id="main">
+
+        <!-- 01 — HERO -->
         <section class="hero">
             <div class="container hero-grid">
                 <div class="hero-copy reveal">
-                    <p class="eyebrow">Lagergeschäft. Endlich klar.</p>
-                    <h1>Aufhören, Berichte zu lesen. Anfangen, zu entscheiden.</h1>
-                    <p class="lede">Wolke AI legt sich über dein bestehendes ERP und deine operativen Systeme, verbindet sich über freigegebene Schnittstellen oder sichere Exporte und gibt dir als Geschäftsführung oder Teamleitung eine KI-gestützte Übersicht — ohne neue Software lernen zu müssen.</p>
-                    <div class="actions"><a class="btn btn-primary" href="#contact">KI-Assessment anfragen</a><a class="btn btn-ghost" href="./product.html">So funktioniert's</a></div>
-                    <div class="trust-note" aria-label="Wolke AI Hinweise"><span><span class="dot"></span>ERP bleibt Datenquelle</span><span><span class="dot"></span>Schnittstellen oder sichere Exporte</span><span><span class="dot"></span>Kein neues System einführen</span></div>
+                    <p class="eyebrow">Wolke: KI für Großhändler</p>
+                    <h1>Ihre Abläufe laufen. Wolke macht mehr daraus.</h1>
+                    <p class="lede">Bestellungen, Touren, Lieferscheine und Rechnungen entstehen bei Ihnen jeden Tag. Wolke verbindet sie mit den Daten aus Ihrer Warenwirtschaft und zeigt, wo Sie handeln sollten — ohne Ihre Warenwirtschaft zu ersetzen.</p>
+                    <div class="actions"><a class="btn btn-primary" href="#hinweise">Wolke für Ihren Betrieb ansehen</a><a class="btn btn-ghost" href="#kontakt">Gespräch vereinbaren</a></div>
+                    <div class="trust-note"><span><span class="dot"></span>Kein WaWi-Wechsel nötig</span><span><span class="dot"></span>Ihre Kunden bestellen wie bisher</span><span><span class="dot"></span>Hosting in Deutschland</span></div>
                 </div>
-                <div class="app-frame reveal" aria-label="Demo der Wolke AI Lagerübersicht">
+                <div class="app-frame reveal">
                     <div class="app-card">
-                        <div class="app-topbar"><div class="status-dots" aria-hidden="true"><span></span><span></span><span></span></div><span class="demo-pill">Demo-Daten</span></div>
+                        <div class="app-topbar"><span class="shell-title">Betriebsüberblick</span><span class="shell-meta">Donnerstag · 08:15</span></div>
                         <div class="app-body">
-                            <div class="question-box"><p><strong>Frag Wolke:</strong><br />Welche Artikel brauchen vor Freitag Aufmerksamkeit?</p><span class="answer-bubble">KI</span></div>
-                            <div class="insight-grid">
-                                <article class="insight-card"><div><span class="insight-label">MHD-Druck</span><div class="insight-value">14</div></div><p>Artikel laufen in 30 Tagen ab. Zuerst Chargen C-2241 und C-2251 prüfen.</p></article>
-                                <article class="insight-card"><div><span class="insight-label">Schwache Bewegung</span><div class="insight-value">8</div></div><p>Artikel unter Mindestumschlag seit 21+ Tagen. Aktion oder Preisanpassung prüfen.</p></article>
-                                <article class="insight-card"><div><span class="insight-label">Lieferungen heute</span><div class="insight-value">3</div></div><p>Händler A, B und C im Plan. Eine Route braucht Bestätigung bis 12 Uhr.</p></article>
-                                <article class="insight-card"><div><span class="insight-label">Deckungsbeitrag</span><div class="insight-value">2</div></div><p>Zwei Artikel unter deiner Marge nach Lieferantenpreiserhöhung.</p></article>
+                            <ul class="today-list">
+                                <li class="today-item today-item--warn">
+                                    <span class="chip chip--alert">Kunde</span>
+                                    <div><strong>Restaurant Milano</strong><span>Kunde #4412 · −34 % · letzte Bestellung vor 18 Tagen</span></div>
+                                    <span class="today-val">−34 %</span>
+                                </li>
+                                <li class="today-item today-item--stock">
+                                    <span class="chip chip--warn">Bestand</span>
+                                    <div><strong>Mozzarella 1 kg</strong><span>84 Kartons · Restlaufzeit 22 Tage</span></div>
+                                    <span class="today-val">14</span>
+                                </li>
+                                <li class="today-item today-item--tour">
+                                    <span class="chip chip--info">Tour</span>
+                                    <div><strong>Tour 12 · M. Kaya</strong><span>4 Stopps · Nordmarkt vor 10:00</span></div>
+                                    <span class="today-val">+40′</span>
+                                </li>
+                                <li class="today-item today-item--ok">
+                                    <span class="chip chip--ok">Faktura</span>
+                                    <div><strong>R-2026-0412</strong><span>Retoure 1 Kiste · 82,00 € → 62,00 €</span></div>
+                                    <span class="today-val">offen</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02 — ANBINDUNG -->
+        <section class="band" id="anbindung">
+            <div class="container int-grid">
+                <div class="reveal">
+                    <p class="eyebrow dark">Anbindung</p>
+                    <h2>Angebunden an Ihre Warenwirtschaft und Datenquellen.</h2>
+                    <p class="lede">Wolke setzt auf vorhandenen Systemen auf — statt Ihre Warenwirtschaft zu ersetzen. Ihre Daten sind bereits da. Wolke macht mehr daraus.</p>
+                    <p class="int-note">Angebunden wird über Schnittstellen, lesende Sichten oder abgestimmte Exporte — nur die Daten, die der erste Anwendungsfall braucht.</p>
+                </div>
+
+                <div class="int-visual reveal">
+                    <ul class="int-tiles">
+                        <!-- Logo-Slot: <span class="int-mark"> durch <img class="int-logo" src="./assets/logos/…"> ersetzen, siehe assets/logos/README.md -->
+                        <li class="int-tile"><span class="int-mark"><span class="int-brand">Brückner</span><strong>WinAB</strong></span><span class="int-meta">Warenwirtschaft</span></li>
+                        <li class="int-tile"><span class="int-mark"><span class="int-brand">GDI</span><strong>Business-Line</strong></span><span class="int-meta">Warenwirtschaft</span></li>
+                        <li class="int-tile"><span class="int-mark"><strong>Xentral</strong></span><span class="int-meta">ERP</span></li>
+                        <li class="int-tile"><span class="int-mark"><span class="int-brand">Qlik</span><strong>Sense</strong></span><span class="int-meta">Datenquelle · BI</span></li>
+                        <li class="int-tile int-tile--more">
+                            <span class="int-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2.6 2.7 6.1 6.6.6-5 4.4 1.5 6.5L12 16.8 6.2 20.2l1.5-6.5-5-4.4 6.6-.6z"/></svg></span>
+                            <span class="int-meta">Viele weitere Systeme</span>
+                        </li>
+                    </ul>
+
+                    <svg class="int-web" viewBox="0 0 90 250" preserveAspectRatio="none" aria-hidden="true">
+                        <g class="int-lines">
+                            <path pathLength="100" d="M0 24 C 46 24 44 125 90 125"/>
+                            <path pathLength="100" d="M0 74 C 46 74 44 125 90 125"/>
+                            <path pathLength="100" d="M0 125 H 90"/>
+                            <path pathLength="100" d="M0 176 C 46 176 44 125 90 125"/>
+                            <path pathLength="100" d="M0 226 C 46 226 44 125 90 125"/>
+                        </g>
+                        <g class="int-pulses">
+                            <path pathLength="100" d="M0 24 C 46 24 44 125 90 125"/>
+                            <path pathLength="100" d="M0 74 C 46 74 44 125 90 125"/>
+                            <path pathLength="100" d="M0 125 H 90"/>
+                            <path pathLength="100" d="M0 176 C 46 176 44 125 90 125"/>
+                            <path pathLength="100" d="M0 226 C 46 226 44 125 90 125"/>
+                        </g>
+                    </svg>
+
+                    <div class="int-hub">
+                        <span class="int-hub-mark" aria-hidden="true"><span class="brand-w">w</span></span>
+                        <strong>Wolke</strong>
+                        <ul class="int-out">
+                            <li>Betriebsüberblick</li>
+                            <li>Hinweise</li>
+                            <li>Aufgaben</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03 — BESTELLEINGANG -->
+        <section class="cap" id="ablauf">
+            <div class="container cap-grid">
+                <div class="cap-text reveal">
+                    <p class="eyebrow">Bestelleingang</p>
+                    <h2>Bestellungen nicht mehr abtippen.</h2>
+                    <p class="lede">Ihre Kunden bestellen weiter per WhatsApp, E-Mail oder Telefon. Wolke erfasst die Angaben und macht daraus eine prüfbare Bestellung — mit Artikel, Menge und Lieferfenster.</p>
+                    <ul class="cap-points">
+                        <li>Kunde und Ablauf bleiben, wie sie sind</li>
+                        <li>Freigabe bleibt bei Ihrem Büro</li>
+                    </ul>
+                </div>
+
+                <div class="cap-visual reveal">
+                    <div class="shell">
+                        <div class="shell-bar"><span class="shell-title">Bestelleingang</span><span class="shell-meta">Donnerstag · 09:04</span></div>
+                        <div class="orders-grid">
+                            <ul class="src-col">
+                                <li class="src src--1">
+                                    <span class="src-head"><span class="chip chip--wa">WhatsApp</span>Restaurant Milano</span>
+                                    <p class="src-msg">Morgen bitte<br />3 Kisten Tomaten<br />2 Mayo 5L<br />Mozzarella wie letzte Woche</p>
+                                </li>
+                                <li class="src src--2">
+                                    <span class="src-head"><span class="chip chip--mail">E-Mail</span>Asia Bistro GmbH</span>
+                                    <p class="src-msg">Bestellung KW 34<br />Zwiebeln 2 Sack<br />Reis 25 kg, 4 Sack<br />Freitag früh</p>
+                                </li>
+                                <li class="src src--3">
+                                    <span class="src-head"><span class="chip chip--tel">Telefon</span>Trattoria Roma</span>
+                                    <p class="src-msg">Notiz Disposition<br />2 Kisten Tomaten<br />1 Karton Mozzarella<br />Mittwoch 08:00</p>
+                                </li>
+                            </ul>
+
+                            <svg class="src-web" viewBox="0 0 60 210" preserveAspectRatio="none" aria-hidden="true">
+                                <g class="int-lines">
+                                    <path pathLength="100" d="M0 34 C 32 34 30 105 60 105"/>
+                                    <path pathLength="100" d="M0 105 H 60"/>
+                                    <path pathLength="100" d="M0 176 C 32 176 30 105 60 105"/>
+                                </g>
+                                <g class="src-pulses">
+                                    <path pathLength="100" d="M0 34 C 32 34 30 105 60 105"/>
+                                    <path pathLength="100" d="M0 105 H 60"/>
+                                    <path pathLength="100" d="M0 176 C 32 176 30 105 60 105"/>
+                                </g>
+                            </svg>
+
+                            <div class="order-doc">
+                                <div class="doc-stack">
+                                    <div class="doc-set doc-set--1">
+                                        <div class="doc-head"><strong>Bestellung #10482</strong><span class="chip chip--wa">WhatsApp</span></div>
+                                        <p class="doc-cust">Restaurant Milano · Kunde #4412</p>
+                                        <table class="doc-lines">
+                                            <thead><tr><th>Artikel</th><th>Menge</th></tr></thead>
+                                            <tbody>
+                                                <tr><td>Tomaten 5 kg</td><td>3 Kisten</td></tr>
+                                                <tr><td>Mayonnaise 5 L</td><td>2 Flaschen</td></tr>
+                                                <tr><td>Mozzarella 1 kg</td><td>4 Kartons</td></tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="doc-liefer">Lieferung: Morgen · 08:00–10:00</p>
+                                    </div>
+                                    <div class="doc-set doc-set--2">
+                                        <div class="doc-head"><strong>Bestellung #10483</strong><span class="chip chip--mail">E-Mail</span></div>
+                                        <p class="doc-cust">Asia Bistro GmbH · Kunde #3187</p>
+                                        <table class="doc-lines">
+                                            <thead><tr><th>Artikel</th><th>Menge</th></tr></thead>
+                                            <tbody>
+                                                <tr><td>Zwiebeln 5 kg</td><td>2 Sack</td></tr>
+                                                <tr><td>Reis 25 kg</td><td>4 Sack</td></tr>
+                                                <tr><td>Sojasauce 5 L</td><td>3 Kanister</td></tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="doc-liefer">Lieferung: Freitag · 06:30–08:00</p>
+                                    </div>
+                                    <div class="doc-set doc-set--3">
+                                        <div class="doc-head"><strong>Bestellung #10484</strong><span class="chip chip--tel">Telefon</span></div>
+                                        <p class="doc-cust">Trattoria Roma · Kunde #2904</p>
+                                        <table class="doc-lines">
+                                            <thead><tr><th>Artikel</th><th>Menge</th></tr></thead>
+                                            <tbody>
+                                                <tr><td>Tomaten 5 kg</td><td>2 Kisten</td></tr>
+                                                <tr><td>Mozzarella 1 kg</td><td>1 Karton</td></tr>
+                                                <tr><td>Olivenöl 5 L</td><td>2 Kanister</td></tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="doc-liefer">Lieferung: Mittwoch · 08:00–09:30</p>
+                                    </div>
+                                </div>
+                                <div class="doc-foot">
+                                    <button class="btn btn-cyan doc-btn" type="button" tabindex="-1" aria-hidden="true">Freigeben</button>
+                                    <span class="doc-done">Freigegeben · an die Warenwirtschaft übergeben</span>
+                                    <span class="doc-count"><b>3</b> offen</span>
+                                    <span class="demo-cursor demo-cursor--orders" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 2.5 19.5 12l-6.6 1.2L9.8 20 5 2.5Z"/></svg></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -72,71 +267,269 @@
             </div>
         </section>
 
-        <section class="section">
-            <div class="container two-col">
-                <div class="reveal"><p class="eyebrow">Das Problem</p><h2>Dein ERP hat die Daten. Dein Team gräbt täglich danach.</h2><p class="lede">Inhaber und Mitarbeitende lesen jeden Tag manuell ERP-Exporte, vordefinierte Berichte und operative Tabellen. Die wichtigen Signale stecken in den Tabellen: MHD-Risiken, Lagerbewegungen, Preisdruck, Saisonalität, verspätete Lieferungen. Bis jemand die Antwort gefunden hat, ist das Zeitfenster zum Handeln oft schon vorbei.</p></div>
-                <div class="problem-panel reveal"><ul class="problem-list">
-                    <li><span class="mini-bubble">1</span><span><strong>MHD-Risiken verstecken sich in Chargen.</strong> Ware wird erst kritisch, wenn es jemand zufällig bemerkt — nicht rechtzeitig.</span></li>
-                    <li><span class="mini-bubble">2</span><span><strong>Langsam drehende Artikel bleiben unsichtbar.</strong> Umschlagseinbrüche fallen erst auf, wenn jemand den Bericht liest.</span></li>
-                    <li><span class="mini-bubble">3</span><span><strong>Kundenupdates müssen hinterhertelefoniert werden.</strong> Teams wechseln zwischen Bestellsystem, Lagerstatus und Lieferinformation hin und her.</span></li>
-                </ul></div>
-            </div>
-        </section>
+        <!-- 04 — DISPOSITION -->
+        <section class="cap cap--flip" id="tour">
+            <div class="container cap-grid">
+                <div class="cap-text reveal">
+                    <p class="eyebrow">Disposition</p>
+                    <h2>Die passende Tour wählen, ohne Lieferfenster aus dem Blick zu verlieren.</h2>
+                    <p class="lede">Wolke rechnet zwei Vorschläge durch und schreibt daneben, was der Unterschied im Alltag bedeutet. Gefahren wird, was Ihre Disposition auswählt.</p>
+                    <ul class="cap-points">
+                        <li>Kürzeste Gesamttour oder dringender Kunde zuerst</li>
+                        <li>Lieferfenster und Positionen pro Stopp im Blick</li>
+                    </ul>
+                </div>
 
-        <section class="quote-band"><div class="container"><p>„Bis jemand die Antwort aus dem Bericht herausgelesen hat, ist das Zeitfenster zum Handeln oft vorbei.“</p></div></section>
+                <div class="cap-visual reveal">
+                    <div class="shell">
+                        <div class="shell-bar"><span class="shell-title">Tour 12 · Donnerstag</span><span class="shell-meta">Fahrer M. Kaya · 4 Stopps</span></div>
+                        <div class="tour-grid">
+                            <ol class="stop-list">
+                                <li class="stop stop--depot"><span class="stop-no">D</span><div><strong>Depot</strong><span>Abfahrt 06:30</span></div></li>
+                                <li class="stop"><span class="stop-no">1</span><div><strong>Asia Markt</strong><span>18 Positionen · 07:30–08:00</span></div></li>
+                                <li class="stop"><span class="stop-no">2</span><div><strong>Restaurant Milano</strong><span>12 Positionen · 08:15–09:00</span></div></li>
+                                <li class="stop stop--urgent"><span class="stop-no">3</span><div><strong>Nordmarkt</strong><span>21 Positionen · vor 10:00</span></div><span class="chip chip--warn">dringend</span></li>
+                            </ol>
 
-        <section class="section" id="services">
-            <div class="container">
-                <div class="reveal"><p class="eyebrow">Leistungen</p><h2>Eine KI-Schicht über den Systemen, denen du bereits vertraust.</h2><p class="lede">Wolke legt sich über dein bestehendes ERP und deine operativen Systeme. Es ersetzt sie nicht. Es macht die Informationen leichter zugänglich — zum Fragen, Verstehen und Handeln.</p></div>
-                <div class="cards-grid">
-                    <article class="card fun-cyan reveal"><div><span class="card-icon">01</span><h3>ERP-verbundener KI-Assistent</h3></div><p>Stell Fragen in normaler Sprache und bekommst Antworten aus deinen ERP-Daten — kein SQL, kein Reportaufbau nötig.</p></article>
-                    <article class="card fun-yellow reveal"><div><span class="card-icon">02</span><h3>Bestands- und MHD-Übersicht</h3></div><p>Chargen mit Ablaufdruck, Artikel die zu lange liegen, und Positionen die Aufmerksamkeit brauchen — bevor Verluste entstehen.</p></article>
-                    <article class="card fun-mint reveal"><div><span class="card-icon">03</span><h3>Artikel- und Chargenverfolgung</h3></div><p>Verfolge Waren und Chargen durch operative Prozesse, Lager und die Lieferkette zum Händler.</p></article>
-                    <article class="card fun-mint reveal"><div><span class="card-icon">04</span><h3>Preis- und Saisonanalyse</h3></div><p>Deckungsbeitragsdruck und saisonale Bewegungsmuster erkennen — damit Preisgespräche auf Daten beruhen, nicht nur auf Gefühl.</p></article>
-                    <article class="card fun-cyan reveal"><div><span class="card-icon">05</span><h3>B2B-Kundentransparenz</h3></div><p>Interne Teams bekommen klarere Antworten zu Bestellstatus, Lieferfortschritt und Händler-Rückfragen.</p></article>
-                    <article class="card fun-yellow reveal"><div><span class="card-icon">06</span><h3>KI-Integration und Teameinführung</h3></div><p>Den ersten sinnvollen Anwendungsfall verbinden, das Team einarbeiten und den Assistenten an echten Alltagsfragen weiterentwickeln.</p></article>
+                            <svg class="tour-map" viewBox="0 0 300 210" role="img" aria-label="Tourkarte mit Depot und drei Stopps">
+                                <rect class="map-bg" x="0" y="0" width="300" height="210" rx="10"/>
+                                <g class="map-roads"><path d="M0 62h300M0 142h300M92 0v210M196 0v210"/></g>
+                                <path class="rt rt--a" pathLength="100" d="M40 168 C 70 160 78 146 100 140 C 138 128 158 104 180 78 C 198 56 220 50 254 52"/>
+                                <path class="rt rt--b" pathLength="100" d="M40 168 C 96 172 168 148 214 104 C 240 78 250 62 254 52 C 226 58 200 66 180 78 C 148 96 118 126 100 140"/>
+                                <g class="map-stops">
+                                    <circle cx="100" cy="140" r="6"/><text x="100" y="143.5">1</text>
+                                    <circle cx="180" cy="78" r="6"/><text x="180" y="81.5">2</text>
+                                    <circle class="stop-urgent" cx="254" cy="52" r="7.5"/><text x="254" y="55.5">3</text>
+                                </g>
+                                <rect class="map-home" x="32" y="160" width="17" height="17" rx="4"/>
+                            </svg>
+                        </div>
+
+                        <div class="tour-options">
+                            <button class="tour-opt tour-opt--a" type="button" tabindex="-1" aria-hidden="true">
+                                <span class="opt-head"><strong>Effiziente Tour</strong><span class="opt-flag">gewählt</span></span>
+                                <span class="opt-main">Gesamttour <b>25 Min.</b></span>
+                                <span class="opt-meta">12,5 km · 1,2 L · alle Lieferfenster eingehalten</span>
+                            </button>
+                            <button class="tour-opt tour-opt--b" type="button" tabindex="-1" aria-hidden="true">
+                                <span class="opt-head"><strong>Priorität zuerst</strong><span class="opt-flag">gewählt</span></span>
+                                <span class="opt-main">Nordmarkt erreicht in <b>18 Min.</b></span>
+                                <span class="opt-meta">15,2 km · 1,8 L · längere Gesamtstrecke</span>
+                            </button>
+                            <span class="demo-cursor demo-cursor--tour" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 2.5 19.5 12l-6.6 1.2L9.8 20 5 2.5Z"/></svg></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section dark-section light-text" id="how-it-works">
-            <div class="container">
-                <div class="reveal"><p class="eyebrow dark">So funktioniert's</p><h2>Dein ERP bleibt die Wahrheitsquelle. Wolke wird die Erkenntnisschicht darüber.</h2><p class="lede">Wir starten mit dem Auswertungsschmerz, den du heute schon spürst — und bauen einen praxisnahen Assistenten rund um deine bestehenden Abläufe.</p></div>
-                <div class="workflow">
-                    <article class="step reveal"><span class="step-no">1</span><h3>Abläufe verstehen</h3><p>Wir lernen, wie Bestände, Aufträge, Chargen und Kundenupdates durch dein Unternehmen fließen.</p></article>
-                    <article class="step reveal"><span class="step-no">2</span><h3>Datenquellen prüfen</h3><p>Wir analysieren ERP-Berichte, sichere Exporte, Schnittstellen, Tabellen und operative Listen.</p></article>
-                    <article class="step reveal"><span class="step-no">3</span><h3>Einen konkreten Schmerzpunkt wählen</h3><p>Wir starten dort, wo schnellere Antworten den klarsten Mehrwert bringen.</p></article>
-                    <article class="step reveal"><span class="step-no">4</span><h3>Sicher verbinden</h3><p>Verbindung über freigegebene APIs, lesenden Zugriff oder kontrollierte Exporte.</p></article>
-                    <article class="step reveal"><span class="step-no">5</span><h3>Assistenten aufbauen</h3><p>KI-Assistent, Zusammenfassungen, Hinweise und Tracking-Ansichten für dein Team.</p></article>
-                    <article class="step reveal"><span class="step-no">6</span><h3>Einführen und verbessern</h3><p>Team einarbeiten, Feedback aufnehmen und die Schicht an echten Alltagsentscheidungen weiterentwickeln.</p></article>
+        <!-- 05 — RETOURE / RECHNUNG -->
+        <section class="cap" id="rechnung">
+            <div class="container cap-grid">
+                <div class="cap-text reveal">
+                    <p class="eyebrow">Retoure &amp; Faktura</p>
+                    <h2>Eine Kiste zurück — und die Rechnung stimmt trotzdem.</h2>
+                    <p class="lede">Der Fahrer meldet die Abweichung beim Stopp. Wolke hängt sie an den Auftrag und zeigt sie auf der Rechnung. Sie bestätigen, die Faktura wird angepasst.</p>
+                    <ul class="cap-points">
+                        <li>Retoure am Auftrag statt in einer WhatsApp-Gruppe</li>
+                        <li>Angepasst wird erst nach Ihrer Bestätigung</li>
+                    </ul>
+                </div>
+
+                <div class="cap-visual reveal">
+                    <div class="shell shell--invoice">
+                        <div class="shell-bar"><span class="shell-title">Rechnung R-2026-0412</span><span class="chip chip--draft">Entwurf</span></div>
+
+                        <div class="driver-note">
+                            <span class="chip chip--wa">Fahrer</span>
+                            <span>M. Kaya · Stopp 2 · Restaurant Milano — <strong>1 Kiste Tomaten defekt zurück</strong> · 10:42</span>
+                        </div>
+
+                        <table class="doc-lines doc-lines--invoice">
+                            <thead><tr><th>Artikel</th><th>Menge</th><th>Betrag</th></tr></thead>
+                            <tbody>
+                                <tr class="inv-row">
+                                    <td>Tomaten 5 kg</td>
+                                    <td><span class="qty-old">3 Kisten</span><span class="qty-new">2 Kisten</span></td>
+                                    <td class="num"><span class="sum-old">60,00 €</span><span class="sum-new">40,00 €</span></td>
+                                </tr>
+                                <tr><td>Mayonnaise 5 L</td><td>2 Flaschen</td><td class="num">14,00 €</td></tr>
+                                <tr><td>Zwiebeln 5 kg</td><td>2 Sack</td><td class="num">8,00 €</td></tr>
+                            </tbody>
+                        </table>
+
+                        <div class="invoice-total">
+                            <span>Gesamt</span>
+                            <span class="total-values"><span class="total-old">82,00 €</span><span class="total-new">62,00 €</span></span>
+                        </div>
+
+                        <div class="invoice-foot">
+                            <button class="btn btn-cyan invoice-btn" type="button" tabindex="-1" aria-hidden="true">Rechnung anpassen</button>
+                            <p class="invoice-done">Rechnung angepasst · 20,00 € gutgeschrieben</p>
+                            <span class="demo-cursor demo-cursor--invoice" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 2.5 19.5 12l-6.6 1.2L9.8 20 5 2.5Z"/></svg></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="security">
-            <div class="container security-shell">
-                <div class="reveal"><p class="eyebrow">Daten & Sicherheit</p><h2>Gebaut für deutsche Datenschutzanforderungen.</h2><p class="lede">Wolke AI kann in Deutschland gehostet, auf deinem eigenen Server betrieben oder als selbst gehostete Lösung konfiguriert werden — für Unternehmen, die enge Kontrolle über operative Daten brauchen.</p></div>
-                <div class="security-card reveal"><p class="muted">Wir verbinden uns über freigegebene Schnittstellen oder sichere Exporte, verwenden verschlüsselte Datenübertragung und gestalten Deployments nach DSGVO-konformen Grundsätzen. Dein ERP bleibt die Datenquelle.</p><ul class="security-list"><li>In Deutschland gehostet</li><li>Selbst-Hosting möglich</li><li>Verschlüsselte Übertragung</li><li>Freigegebene APIs oder sichere Exporte</li><li>Rollenbasierte Zugriffsrechte</li><li>ERP bleibt Datenquelle</li></ul></div>
-            </div>
-        </section>
-
-        <section class="section compact" id="pricing">
+        <!-- 06/07 — HINWEISE -->
+        <section class="band band--signals" id="hinweise">
             <div class="container">
-                <div class="reveal"><p class="eyebrow">Leistungspakete</p><h2>Nach Umfang und Ergebnis berechnet — nicht nach Nutzerlizenzen.</h2><p class="lede">Jede Zusammenarbeit beginnt mit einem Assessment. Danach kann Wolke AI einen fokussierten Anwendungsfall umsetzen oder als dauerhafter KI-Partner für den Betrieb mitwachsen.</p></div>
-                <div class="pricing-row">
-                    <article class="package reveal"><span class="tag">Start</span><h3>KI-Assessment</h3><p class="muted">Herausfinden, wo KI den größten manuellen Auswertungsaufwand zuerst entfernt.</p><ul><li><span class="check">✓</span> ERP und Datenquellen prüfen</li><li><span class="check">✓</span> Auswertungsschmerzen kartieren</li><li><span class="check">✓</span> Priorisierte KI-Roadmap</li></ul></article>
-                    <article class="package featured reveal"><span class="tag">Aufbauen</span><h3>Umsetzungs-Sprint</h3><p>Einen fokussierten Assistenten, eine Reporting-Schicht oder einen Tracking-Workflow aufbauen.</p><ul><li><span class="check">✓</span> ERP-Anbindung per Schnittstelle oder sicherem Export</li><li><span class="check">✓</span> Erster Assistent oder Tracking-Layer</li><li><span class="check">✓</span> Testing und Teameinführung</li></ul></article>
-                    <article class="package reveal"><span class="tag">Wachsen</span><h3>Dauerhafter KI-Partner</h3><p class="muted">Reporting, Betrieb und KI-Anwendungsfälle kontinuierlich weiterentwickeln.</p><ul><li><span class="check">✓</span> Wartung und Support</li><li><span class="check">✓</span> Neue Anwendungsfälle</li><li><span class="check">✓</span> Monatliches BI-Review</li></ul></article>
+                <div class="band-head reveal">
+                    <p class="eyebrow dark">Hinweise</p>
+                    <h2>Wolke zeigt, wo Sie heute hinschauen sollten.</h2>
+                    <p class="lede">Wolke sieht Bestellungen, Lieferungen und Bestände zusammen — und meldet sich, wenn etwas kippt. Sie sehen, warum. Handeln tun Sie.</p>
                 </div>
-                <p class="pricing-note reveal">Preise nach Umfang und Ergebnis. Kein Start ohne Assessment.</p>
-                <div class="actions reveal"><a class="btn btn-primary" href="./pricing.html">Zum Preismodell</a><a class="btn btn-ghost" href="#contact">Umfang besprechen</a></div>
+
+                <div class="signal-row">
+                    <article class="signal reveal">
+                        <div class="signal-top">
+                            <span class="chip chip--alert">Erkannt</span>
+                            <span class="signal-when">heute · 08:15</span>
+                        </div>
+                        <h3>Restaurant Milano bestellt 34 % weniger als üblich.</h3>
+                        <p class="signal-sub">Kunde #4412 · Ø 13.820 € pro Monat · letzte Bestellung vor 18 Tagen</p>
+
+                        <details class="drawer">
+                            <summary>Warum?</summary>
+                            <div class="drawer-body">
+                                <div class="mini-chart" role="img" aria-label="Bestellwert Januar bis Juni: 14.200, 13.800, 14.700, 12.900, 13.500, 9.100 Euro">
+                                    <span style="--h:97%"><em>Jan</em></span>
+                                    <span style="--h:94%"><em>Feb</em></span>
+                                    <span style="--h:100%"><em>Mär</em></span>
+                                    <span style="--h:88%"><em>Apr</em></span>
+                                    <span style="--h:92%"><em>Mai</em></span>
+                                    <span class="is-low" style="--h:62%"><em>Jun</em></span>
+                                </div>
+                                <table class="doc-lines">
+                                    <tbody>
+                                        <tr><td>Ø Bestellwert (Jan–Mai)</td><td class="num">13.820 €</td></tr>
+                                        <tr><td>Juni</td><td class="num">9.100 €</td></tr>
+                                        <tr><td>Letzte Bestellung</td><td class="num">vor 18 Tagen</td></tr>
+                                        <tr><td>Rückgang vor allem bei</td><td class="num">Tiefkühl, Käse</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </details>
+
+                        <details class="drawer">
+                            <summary>Aktion ansehen</summary>
+                            <div class="drawer-body">
+                                <p class="action-line">Vertrieb heute kontaktieren.</p>
+                                <p class="drawer-p">Aufgabe für M. Weber: Angebot für Mozzarella 1 kg und Tiefkühlware prüfen — beide Gruppen hat der Kunde vorher regelmäßig gekauft.</p>
+                                <p class="human-note">Wolke legt die Aufgabe an. Anrufen tut Ihr Vertrieb.</p>
+                            </div>
+                        </details>
+
+                        <details class="drawer">
+                            <summary>Wirkung</summary>
+                            <div class="drawer-body">
+                                <ol class="impact-line">
+                                    <li><span>Mo</span>Hinweis erstellt</li>
+                                    <li><span>Di</span>Vertrieb hat kontaktiert</li>
+                                    <li><span>Do</span>Neue Bestellung · 2.840 €</li>
+                                </ol>
+                                <p class="drawer-p">Wolke prüft nach, ob der Kunde wieder bestellt — und meldet sich erneut, wenn nicht.</p>
+                            </div>
+                        </details>
+                    </article>
+
+                    <ol class="pattern-strip reveal">
+                        <li><span>1</span>Erkannt<em>Was hat sich verändert?</em></li>
+                        <li><span>2</span>Warum<em>Welche Daten stecken dahinter?</em></li>
+                        <li><span>3</span>Aktion<em>Was wäre jetzt sinnvoll?</em></li>
+                        <li><span>4</span>Wirkung<em>Hat es etwas gebracht?</em></li>
+                    </ol>
+                </div>
             </div>
         </section>
 
-        <section class="section compact" id="contact">
+        <!-- 08 — MHD -->
+        <section class="cap cap--flip" id="mhd">
+            <div class="container cap-grid">
+                <div class="cap-text reveal">
+                    <p class="eyebrow">Bestand &amp; MHD</p>
+                    <h2>Ware bewegen, bevor sie abgeschrieben wird.</h2>
+                    <p class="lede">Wolke rechnet Bestand, Abverkauf und Restlaufzeit gegeneinander — und nennt die Kunden, die den Artikel ohnehin regelmäßig kaufen.</p>
+                    <ul class="cap-points">
+                        <li>14 Artikel mit MHD-Druck in den nächsten 30 Tagen</li>
+                        <li>Vorschlag mit Namen statt Prozentwerten</li>
+                    </ul>
+                </div>
+
+                <div class="cap-visual reveal">
+                    <div class="shell">
+                        <div class="shell-bar"><span class="shell-title">Artikel 44120 · Mozzarella 1 kg</span><span class="chip chip--warn">MHD-Druck</span></div>
+                        <div class="item-view">
+                            <dl class="item-stats">
+                                <div><dt>Bestand</dt><dd>84 Kartons</dd></div>
+                                <div><dt>Abverkauf</dt><dd>Ø 11 / Woche</dd></div>
+                                <div><dt>Restlaufzeit</dt><dd>22 Tage</dd></div>
+                                <div class="is-risk"><dt>Rechnerisch offen</dt><dd>≈ 49 Kartons</dd></div>
+                            </dl>
+                            <p class="item-note">Bei aktuellem Abverkauf bleiben rund 49 Kartons übrig, wenn nichts passiert.</p>
+                            <table class="doc-lines">
+                                <thead><tr><th>Kunde kauft regelmäßig</th><th>Ø Menge</th><th>Letzte Bestellung</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Restaurant Milano</td><td>4 Kartons</td><td>vor 18 Tagen</td></tr>
+                                    <tr><td>Trattoria Roma</td><td>2 Kartons</td><td>vor 5 Tagen</td></tr>
+                                    <tr><td>Pizzeria Bella</td><td>6 Kartons</td><td>vor 9 Tagen</td></tr>
+                                    <tr class="row-more"><td colspan="3">+ 5 weitere Kunden</td></tr>
+                                </tbody>
+                            </table>
+                            <div class="item-foot">
+                                <span class="item-action">Verkauf prüfen · 8 passende Kunden</span>
+                                <button class="btn btn-cyan btn-sm" type="button" tabindex="-1" aria-hidden="true">Aufgabe anlegen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 09 — VERTRAUEN + EINFÜHRUNG -->
+        <section class="section compact" id="sicherheit">
+            <div class="container trust-grid">
+                <div class="reveal">
+                    <p class="eyebrow">Daten &amp; Einführung</p>
+                    <h2>Ihre Daten. Ihr Betrieb. Unter Ihrer Kontrolle.</h2>
+                    <p class="lede">Angebunden wird, was Sie freigeben. Eingeführt wird an einem Ablauf, nicht am ganzen Betrieb auf einmal.</p>
+                    <details class="tech-details">
+                        <summary>Technische Details ansehen</summary>
+                        <p class="drawer-p">Angebunden wird über freigegebene Schnittstellen, lesenden Zugriff auf definierte Sichten oder abgestimmte Exporte — je nachdem, was Ihre Warenwirtschaft anbietet. Welche Felder übertragen werden, halten wir vor dem Start schriftlich fest. Auftragsverarbeitung und Datenschutzdokumentation klären wir gemeinsam, bevor Daten fließen.</p>
+                    </details>
+                </div>
+                <div class="reveal">
+                    <ul class="fact-rows">
+                        <li><span>Hosting</span><strong>in Deutschland</strong></li>
+                        <li><span>Übertragung</span><strong>verschlüsselt</strong></li>
+                        <li><span>Zugriff</span><strong>Rollen für Disposition, Fahrer, Vertrieb</strong></li>
+                        <li><span>Umfang</span><strong>nur die benötigten Daten</strong></li>
+                        <li><span>Warenwirtschaft</span><strong>bleibt bestehen</strong></li>
+                    </ul>
+                    <ol class="intro-steps">
+                        <li><span>1</span><div><strong>Betrieb verstehen</strong>Wie laufen Bestellung, Tour und Faktura heute?</div></li>
+                        <li><span>2</span><div><strong>Klein starten</strong>Ein Ablauf, ein messbares Ergebnis.</div></li>
+                        <li><span>3</span><div><strong>Gemeinsam einführen</strong>Einrichten, testen, Team einarbeiten.</div></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10 — CTA -->
+        <section class="section compact" id="kontakt">
             <div class="container cta-panel reveal">
-                <div><p class="eyebrow dark">Kontakt</p><h2>KI-Assessment für dein Lagergeschäft anfragen.</h2><p class="lede">Erzähl uns von deinem ERP und deinem größten Auswertungsaufwand. Wir kommen mit einem klaren Bild zurück, wo KI helfen kann.</p></div>
-                <div class="contact-box"><p>E-Mail</p><a href="mailto:tanay.gaherwar@gmail.com">hello@wolke.ai</a><div class="actions"><a class="btn btn-cyan" href="mailto:tanay.gaherwar@gmail.com?subject=KI-Assessment%20anfragen">Assessment anfragen</a></div></div>
+                <div>
+                    <p class="eyebrow dark">Kontakt</p>
+                    <h2>Wie würde Wolke in Ihrem Betrieb aussehen?</h2>
+                    <p class="lede">In einem kurzen Gespräch schauen wir gemeinsam auf Ihren Ablauf und Ihre Warenwirtschaft.</p>
+                </div>
+                <div class="contact-box">
+                    <p>E-Mail</p>
+                    <a href="mailto:Singh@wolke-ai.de">Singh@wolke-ai.de</a>
+                    <div class="actions"><a class="btn btn-cyan" href="mailto:Singh@wolke-ai.de?subject=Gespr%C3%A4ch%20vereinbaren">Gespräch vereinbaren</a></div>
+                </div>
             </div>
         </section>
     </main>
@@ -145,15 +538,15 @@
         <div class="footer-grid">
             <div>
                 <a class="brand" href="./index.html" aria-label="Wolke AI Startseite"><span class="brand-mark" aria-hidden="true"><span class="brand-w">w</span></span><span>Wolke AI</span></a>
-                <p>Lagergeschäft-Intelligenz für FMCG-Großhändler, Importeure und Distributoren.</p>
+                <p>Wolke bringt KI ins Tagesgeschäft von Großhändlern. Bestehende Warenwirtschafts- und Betriebsdaten werden für Bestellungen, Disposition, Lieferung, Bestand und Vertrieb nutzbar.</p>
             </div>
             <div>
                 <div class="footer-title">Website</div>
-                <div class="footer-links"><a href="./product.html">Produkt</a><a href="./pricing.html">Preise</a><a href="./index.html#contact">Kontakt</a></div>
+                <div class="footer-links"><a href="./index.html#anbindung">Anbindung</a><a href="./index.html#ablauf">Abläufe</a><a href="./index.html#hinweise">Hinweise</a><a href="./product.html">Produkt</a><a href="./ki-grosshandel/">KI im Großhandel</a></div>
             </div>
             <div>
-                <div class="footer-title">Schwerpunkte</div>
-                <div class="footer-links"><a href="./index.html#services">ERP-Intelligenz</a><a href="./index.html#services">Artikeltracking</a><a href="./index.html#security">Datenschutz</a></div>
+                <div class="footer-title">Kontakt</div>
+                <div class="footer-links"><a href="mailto:Singh@wolke-ai.de">Singh@wolke-ai.de</a><a href="./index.html#kontakt">Gespräch vereinbaren</a></div>
             </div>
             <div>
                 <div class="footer-title">Rechtliches</div>
