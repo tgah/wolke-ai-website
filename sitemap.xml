@@ -24,12 +24,7 @@
     <priority>0.3</priority>
   </url>
   <!--
-    Removed from sitemap (noindex, follow applied):
-    - /product.html        — stale V2 framing; V3 rewrite pending
-    - /pricing.html        — not a search acquisition page
-    - /en/                 — English V3 not yet written
-    - /en/product.html     — English V3 not yet written
-    - /en/pricing.html     — not a search acquisition page
-    - /en/legal.html       — low priority; kept accessible but not indexed
+    Not included (noindex, follow applied on those pages):
+    - /product.html, /pricing.html, /en/, /en/product.html, /en/pricing.html, /en/legal.html
   -->
 </urlset>

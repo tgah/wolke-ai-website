@@ -24,8 +24,8 @@ This iteration moves away from the earlier dark template and toward a lighter, r
   `assets/logos/README.md`; the invoice section can be swapped for a real recording,
   see `assets/video/README.md`
 - copy alternatives live in `docs/homepage-v2-copy-options.md`
-- `python3 check.py` verifies the acceptance criteria (dead anchors, du-forms, forbidden
-  strings, contact address, nav, required content, radii, undefined keyframes)
+- `python3 check.py` runs production acceptance checks (dead anchors, forbidden
+  strings, contact address, nav, required content)
 - `pricing.html` is reachable by direct URL but no longer linked from nav or footer
 
 ## Pages
@@ -70,20 +70,3 @@ Build output directory: /
 ```
 
 The build command is a no-op that confirms the static site is ready.
-
-## Before production launch
-
-Founder/legal input still needed:
-
-- final public email address
-- final phone number, or remove phone entirely
-- legal entity name
-- business address
-- responsible person
-- VAT ID / registration details if applicable
-- privacy contact
-- hosting/provider details
-- final domain decision: `wolke-ai.de` or `wolke-ai.de`
-- whether Google Analytics/Hotjar will be added later
-
-The legal page currently contains launch-structure placeholders and must be reviewed before production use.
