@@ -1,0 +1,17 @@
+{
+  "name": "wolke-ai-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static Wolke AI website for Cloudflare Pages",
+  "scripts": {
+    "build": "echo 'Static site: no build step required'",
+    "build:tailwind": "echo 'Tailwind is not required for this static iteration'",
+    "start": "python3 -m http.server 8080"
+  },
+  "keywords": [
+    "wolke-ai",
+    "warehouse-intelligence",
+    "static-site"
+  ],
+  "license": "UNLICENSED"
+}
